@@ -1,0 +1,11 @@
+{
+  "name": "classroomly-ict-learning-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A polished, local-first ICT learning management dashboard for primary schools.",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "test": "powershell -NoProfile -Command \"if (!(Test-Path index.html) -or !(Test-Path styles.css) -or !(Test-Path app.js)) { exit 1 }; Write-Output 'Classroomly smoke test passed'\""
+  }
+}

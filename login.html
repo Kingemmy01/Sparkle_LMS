@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2762e" />
+    <title>Log in — Sparkle Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="login-page">
+    <main class="login-shell">
+      <section class="login-brand"><div class="brand-mark">✦</div><p class="eyebrow">SPARKLE FOUNDATION</p><h1>Learning that keeps moving.</h1><p>Choose your workspace to continue.</p></section>
+      <section class="panel login-panel"><div class="login-panel-head"><p class="eyebrow">WELCOME BACK</p><h2>Log in</h2></div><div class="role-switch" role="tablist"><button type="button" class="active" data-role="admin">Admin</button><button type="button" data-role="facilitator">Facilitator</button><button type="button" data-role="student">Student</button></div><form id="loginForm"><label id="nameLabel">Admin name<input required name="name" placeholder="e.g. Amaka Okafor" autocomplete="name" /></label><label id="passwordLabel">Password<input required name="password" type="password" placeholder="Enter admin password" autocomplete="current-password" /></label><p class="login-hint" id="loginHint">Use your administrator name and password to enter the dashboard.</p><p class="login-error" id="loginError" role="alert"></p><button class="btn btn-primary" type="submit">Continue <span>→</span></button></form><button class="login-secondary-action" type="button" id="showPasswordSetup">Register admin password</button><form id="passwordSetupForm" class="password-setup-form" hidden><p class="login-hint">Create your login password. The default current password is <strong>Sparkle@2024</strong> unless you already changed it.</p><label>Current password<input required name="currentPassword" type="password" /></label><div class="form-grid"><label>New password<input required name="newPassword" type="password" minlength="8" /></label><label>Confirm password<input required name="confirmPassword" type="password" minlength="8" /></label></div><p class="login-error" id="setupError" role="alert"></p><button class="btn btn-ghost" type="submit">Save admin password</button></form></section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

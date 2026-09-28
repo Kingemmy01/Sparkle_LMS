@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2762e" />
+    <title>Student portal — Sparkle Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="student-page">
+    <main class="student-shell">
+      <header class="student-header">
+        <a class="student-brand" href="student.html"><span class="brand-mark">✦</span><span><strong>Sparkle Foundation</strong><small>Student portal</small></span></a>
+        <div class="student-header-actions"><span class="student-badge">Learner access · <b id="studentSession">2024/25</b></span><button class="btn btn-ghost" data-logout>Log out</button></div>
+      </header>
+      <section class="student-intro"><p class="eyebrow">LEARNER ACCESS</p><h1 id="studentWelcome">Welcome, student</h1><p>Enter your details to access the test assigned to your class.</p></section>
+      <div class="student-portal-grid">
+        <section class="panel student-form-panel"><div class="panel-head"><div><h2>Student details</h2><p class="muted">Use the name registered by your school.</p></div></div><form id="studentPortalForm"><label>Student name<input required name="name" placeholder="e.g. Aisha Bello" /></label><label>School<select required name="school" id="portalSchoolSelect"></select></label><div class="form-grid"><label>Class<select required name="class"><option value="">Select class</option><option>Primary 4</option><option>Primary 5</option><option>Primary 6</option></select></label><label>Assessment type<select required name="type"><option value="">Select test</option><option value="first">Test 1</option><option value="second">Test 2</option></select></label></div><button class="btn btn-primary" type="submit">Continue to assessment <span>→</span></button></form></section>
+        <section class="panel student-result-panel" id="portalResult"><div class="portal-placeholder"><span class="portal-placeholder-icon">✦</span><h2>Your assessment will appear here</h2><p class="muted">Complete the details to continue.</p></div></section>
+      </div>
+      <section class="panel quiz-panel" id="quizArea" hidden></section>
+      <footer class="student-footer">Sparkle Foundation · Student learning workspace</footer>
+    </main>
+    <div class="toast" id="toast"><span>✓</span><div><strong>Assessment opened</strong><small>Your assessment is ready.</small></div></div>
+    <script src="student.js"></script>
+  </body>
+</html>
